@@ -76,7 +76,7 @@ class _HeaderState extends State<Header> {
                 ),
               ),
               Positioned(
-                left: MediaQuery.of(context).size.width / 3.3,
+                left: MediaQuery.of(context).size.width>1660?MediaQuery.of(context).size.width / 3.3:MediaQuery.of(context).size.width>1200?MediaQuery.of(context).size.width / 2.8:MediaQuery.of(context).size.width>990?MediaQuery.of(context).size.width / 2.5:MediaQuery.of(context).size.width / 2,
                 top: 140,
                 child: Container(
                   child: Column(
