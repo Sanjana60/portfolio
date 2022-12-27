@@ -1,6 +1,7 @@
-
 import 'package:flutter/material.dart';
 import 'package:portfolio/Components/Header/Header.dart';
+
+import 'Components/Footer/Footer.dart';
 
 void main() {
   runApp(MyApp());
