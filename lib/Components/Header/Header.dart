@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/Components/Header/Desktop/DesktopAvatar.dart';
 
 class Header extends StatefulWidget {
   const Header({Key? key}) : super(key: key);
@@ -54,29 +55,9 @@ class _HeaderState extends State<Header> {
                   image: AssetImage('images/Vector.png'),
                 ),
               ),
+              DesktopAvatar(),
               Positioned(
-                left: MediaQuery.of(context).size.width / 9.4,
-                top: 50,
-                child: Image(
-                  image: AssetImage('images/Gradient.png'),
-                ),
-              ),
-              Positioned(
-                left: MediaQuery.of(context).size.width / 6.3,
-                top: 150,
-                child: Image(
-                  image: AssetImage('images/grad1.png'),
-                ),
-              ),
-              Positioned(
-                left: MediaQuery.of(context).size.width / 5.4,
-                top: 140,
-                child: Image(
-                  image: AssetImage('images/image 1.png'),
-                ),
-              ),
-              Positioned(
-                left: MediaQuery.of(context).size.width>1660?MediaQuery.of(context).size.width / 3.3:MediaQuery.of(context).size.width>1200?MediaQuery.of(context).size.width / 2.8:MediaQuery.of(context).size.width>990?MediaQuery.of(context).size.width / 2.5:MediaQuery.of(context).size.width / 2,
+                left: MediaQuery.of(context).size.width / 3.3,
                 top: 140,
                 child: Container(
                   child: Column(
@@ -88,7 +69,7 @@ class _HeaderState extends State<Header> {
                           color: Color(0xFFFFFFFF),
                           letterSpacing: 0.5,
                           fontWeight: FontWeight.w400,
-                          fontSize: 17.0,
+                          fontSize: 12.0,
                           fontFamily: 'Preahvihear',
                           decoration: TextDecoration.underline,
                           fontStyle: FontStyle.normal,
