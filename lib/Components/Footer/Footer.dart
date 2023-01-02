@@ -11,7 +11,7 @@ class _FooterState extends State<Footer> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(vertical: 70, horizontal: 20),
+      padding: EdgeInsets.symmetric(vertical: 0.0, horizontal: 20),
       child: SingleChildScrollView(
         child: Container(
           height: 1000,
