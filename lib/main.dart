@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/Components/Header/Header.dart';
+import 'package:portfolio/Components/Lab/Lab.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'Components/About/About.dart';
 import 'Components/Footer/Footer.dart';
@@ -18,11 +19,19 @@ class MyApp extends StatelessWidget {
         body: SingleChildScrollView(
           child: Column(
             children: [
-              Container(height: 700,child: Header()),
-              SizedBox(height: 100,),
-              Container(height:280,child: About()),
-              SizedBox(height: 100,),
-              Container(height: 250,child: Footer())
+              Container(height: 700, child: Header()),
+              SizedBox(
+                height: 100,
+              ),
+              Container(height: 280, child: About()),
+              SizedBox(
+                height: 100,
+              ),
+              Container(height: 250, child: Lab()),
+              SizedBox(
+                height: 100,
+              ),
+              Container(height: 250, child: Footer())
             ],
           ),
         ),

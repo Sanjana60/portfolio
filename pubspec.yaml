@@ -64,6 +64,9 @@ flutter:
      - family: Preahvihear
        fonts:
          - asset: fonts/Preahvihear-Regular.ttf
+     - family: Poppins
+       fonts:
+         - asset: fonts/Poppins-Regular.ttf
 
 
   assets:
