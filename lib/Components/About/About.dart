@@ -17,7 +17,6 @@ class _AboutState extends State<About> {
           children: [
             Positioned(
                 left: MediaQuery.of(context).size.width / 5.4,
-                top: 750,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [

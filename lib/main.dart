@@ -15,12 +15,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: const Color(0xFF1A0B2E),
-        body: Container(
-          height: 5000,
+        body: SingleChildScrollView(
           child: Column(
             children: [
-              Header(),
-              About(),
+              Container(height: 700,child: Header()),
+              SizedBox(height: 100,),
+              Container(height:280,child: About()),
+              SizedBox(height: 100,),
+              Container(height: 250,child: Footer())
             ],
           ),
         ),
