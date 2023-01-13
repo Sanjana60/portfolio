@@ -127,8 +127,12 @@ class _LabState extends State<Lab> {
                     ),
                   ],
                 ),
-                Image(
-                  image: AssetImage('images/lab.png'),
+                Positioned(
+                  width: MediaQuery.of(context).size.width / 6.4,
+                  child: Image(
+                    image: AssetImage('images/lab.png'),
+                    height: 1000,
+                  ),
                 ),
               ],
             ),

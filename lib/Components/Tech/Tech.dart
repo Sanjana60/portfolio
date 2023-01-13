@@ -19,9 +19,10 @@ class _TechState extends State<Tech> {
               left: MediaQuery.of(context).size.width / 5.4,
               child: Container(
                 child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: const [
                         Text(
                           "I'm currently looking to join a",
@@ -69,23 +70,22 @@ class _TechState extends State<Tech> {
                         fontStyle: FontStyle.normal,
                       ),
                     ),
+                    SizedBox(
+                      height: 30.0,
+                    ),
+                    Image(
+                      image: AssetImage('images/Skills.png'),
+                    ),
                   ],
                 ),
               ),
             ),
-            SizedBox(
-              height: 40.0,
-            ),
-            Positioned(
-              left: MediaQuery.of(context).size.width / 5.4,
-              child: Image(
-                image: AssetImage('images/tech.png'),
-              ),
-            ),
+            // SizedBox(
+            //   height: 10.0,
+            // ),
           ],
         ),
       ),
     );
-    ;
   }
 }

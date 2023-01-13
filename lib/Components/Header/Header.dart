@@ -49,6 +49,13 @@ class _HeaderState extends State<Header> {
               left: MediaQuery.of(context).size.width / 9.4,
               top: 50,
               child: Image(
+                image: AssetImage('images/Vector.png'),
+              ),
+            ),
+            Positioned(
+              left: MediaQuery.of(context).size.width / 9.4,
+              top: 50,
+              child: Image(
                 image: AssetImage('images/Gradient.png'),
               ),
             ),
