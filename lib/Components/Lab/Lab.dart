@@ -15,127 +15,118 @@ class _LabState extends State<Lab> {
       child: Container(
         child: Stack(
           children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'Featured  Project',
-                      style: TextStyle(
-                        color: Color(0xFF9857D3),
-                        letterSpacing: 0.5,
-                        fontWeight: FontWeight.w400,
-                        fontSize: 9.0,
-                        fontFamily: 'Poppins',
-                        fontStyle: FontStyle.normal,
-                      ),
-                    ),
-                    Text(
-                      'Example Project',
-                      style: TextStyle(
-                        color: Color(0xFFCCD6F6),
-                        letterSpacing: 0.5,
-                        fontWeight: FontWeight.w400,
-                        fontSize: 23.0,
-                        fontFamily: 'Poppins',
-                        fontStyle: FontStyle.normal,
-                      ),
-                    ),
-                    SizedBox(
-                      height: 20.0,
-                    ),
-                    Column(
-                      children: [
-                        Row(
-                          children: [
-                            SizedBox(
-                              height: 80,
-                              width: 350,
-                              child: Card(
-                                shape: RoundedRectangleBorder(
-                                  side: BorderSide(
-                                    color: Color(0xFF693B93).withOpacity(0.7),
-                                  ),
-                                  borderRadius: BorderRadius.circular(7.0),
-                                ),
-                                color: Color(0xFF693B93).withOpacity(0.7),
-                                margin: EdgeInsets.symmetric(
-                                    vertical: 2.0, horizontal: 7.0),
-                                child: Padding(
-                                  padding:
-                                      EdgeInsets.only(top: 2.0, bottom: 2.0),
-                                  child: ListTile(
-                                      title: Column(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Text(
-                                        'A web app for visualizing personalized Spotify data. View your',
-                                        style: TextStyle(
-                                          color: Color(0xFFCCD6F6),
-                                          letterSpacing: 0.3,
-                                          fontWeight: FontWeight.w400,
-                                          fontSize: 9.0,
-                                          fontFamily: 'Poppins',
-                                          fontStyle: FontStyle.normal,
-                                        ),
-                                      ),
-                                      Text(
-                                        'top artists, top tracks, recently played tracks, and detailed',
-                                        style: TextStyle(
-                                          color: Color(0xFFCCD6F6),
-                                          letterSpacing: 0.3,
-                                          fontWeight: FontWeight.w400,
-                                          fontSize: 9.0,
-                                          fontFamily: 'Poppins',
-                                          fontStyle: FontStyle.normal,
-                                        ),
-                                      ),
-                                      Text(
-                                        'information about each track. Create and save new playlists',
-                                        style: TextStyle(
-                                          color: Color(0xFFCCD6F6),
-                                          letterSpacing: 0.3,
-                                          fontWeight: FontWeight.w400,
-                                          fontSize: 9.0,
-                                          fontFamily: 'Poppins',
-                                          fontStyle: FontStyle.normal,
-                                        ),
-                                      ),
-                                      Text(
-                                        'recommended tracks based on your existing playlists.',
-                                        style: TextStyle(
-                                          color: Color(0xFFCCD6F6),
-                                          letterSpacing: 0.3,
-                                          fontWeight: FontWeight.w400,
-                                          fontSize: 9.0,
-                                          fontFamily: 'Poppins',
-                                          fontStyle: FontStyle.normal,
-                                        ),
-                                      ),
-                                    ],
-                                  )),
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-                Positioned(
-                  width: MediaQuery.of(context).size.width / 6.4,
-                  child: Image(
-                    image: AssetImage('images/lab.png'),
-                    height: 1000,
-                  ),
-                ),
-              ],
+            Image(
+              image: AssetImage('images/lab.png'),
+              fit: BoxFit.cover,
+              height: 1800,
             ),
+            Padding(
+              padding: EdgeInsets.only(left: 60.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    'Featured  Project',
+                    style: TextStyle(
+                      color: Color(0xFF9857D3),
+                      letterSpacing: 0.5,
+                      fontWeight: FontWeight.w400,
+                      fontSize: 9.0,
+                      fontFamily: 'Poppins',
+                      fontStyle: FontStyle.normal,
+                    ),
+                  ),
+                  Text(
+                    'Example Project',
+                    style: TextStyle(
+                      color: Color(0xFFCCD6F6),
+                      letterSpacing: 0.5,
+                      fontWeight: FontWeight.w400,
+                      fontSize: 23.0,
+                      fontFamily: 'Poppins',
+                      fontStyle: FontStyle.normal,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 10.0,
+                  ),
+                  SizedBox(
+                    height: 80,
+                    width: 350,
+                    child: Card(
+                      shape: RoundedRectangleBorder(
+                        side: BorderSide(
+                          color: Color(0xFF693B93).withOpacity(0.7),
+                        ),
+                        borderRadius: BorderRadius.circular(7.0),
+                      ),
+                      color: Color(0xFF693B93).withOpacity(0.7),
+                      margin: EdgeInsets.symmetric(
+                          vertical: 2.0, horizontal: 7.0),
+                      child: Padding(
+                        padding:
+                        EdgeInsets.only(top: 2.0, bottom: 2.0),
+                        child: ListTile(
+                            title: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment:
+                              CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'A web app for visualizing personalized Spotify data. View your',
+                                  style: TextStyle(
+                                    color: Color(0xFFCCD6F6),
+                                    letterSpacing: 0.3,
+                                    fontWeight: FontWeight.w400,
+                                    fontSize: 9.0,
+                                    fontFamily: 'Poppins',
+                                    fontStyle: FontStyle.normal,
+                                  ),
+                                ),
+                                Text(
+                                  'top artists, top tracks, recently played tracks, and detailed',
+                                  style: TextStyle(
+                                    color: Color(0xFFCCD6F6),
+                                    letterSpacing: 0.3,
+                                    fontWeight: FontWeight.w400,
+                                    fontSize: 9.0,
+                                    fontFamily: 'Poppins',
+                                    fontStyle: FontStyle.normal,
+                                  ),
+                                ),
+                                Text(
+                                  'information about each track. Create and save new playlists',
+                                  style: TextStyle(
+                                    color: Color(0xFFCCD6F6),
+                                    letterSpacing: 0.3,
+                                    fontWeight: FontWeight.w400,
+                                    fontSize: 9.0,
+                                    fontFamily: 'Poppins',
+                                    fontStyle: FontStyle.normal,
+                                  ),
+                                ),
+                                Text(
+                                  'recommended tracks based on your existing playlists.',
+                                  style: TextStyle(
+                                    color: Color(0xFFCCD6F6),
+                                    letterSpacing: 0.3,
+                                    fontWeight: FontWeight.w400,
+                                    fontSize: 9.0,
+                                    fontFamily: 'Poppins',
+                                    fontStyle: FontStyle.normal,
+                                  ),
+                                ),
+                              ],
+                            )),
+                      ),
+                    ),
+                  ),
+
+                ],
+              ),
+            ),
+
           ],
         ),
       ),
