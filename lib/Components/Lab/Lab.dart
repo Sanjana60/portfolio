@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:blurrycontainer/blurrycontainer.dart';
 
 class Lab extends StatefulWidget {
   const Lab({Key? key}) : super(key: key);
@@ -13,15 +14,20 @@ class _LabState extends State<Lab> {
     return Padding(
       padding: EdgeInsets.symmetric(vertical: 0.0, horizontal: 20),
       child: Container(
+        width: 800,
+        color: Colors.red,
         child: Stack(
           children: [
-            Image(
-              image: AssetImage('images/lab.png'),
-              fit: BoxFit.cover,
-              height: 1800,
+            Align(
+              alignment: Alignment.centerRight,
+              child: Image(
+                image: AssetImage('images/newww.png'),
+                fit: BoxFit.cover,
+                height: 500,
+              ),
             ),
-            Padding(
-              padding: EdgeInsets.only(left: 60.0),
+            Align(
+              alignment: Alignment.centerLeft,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -51,82 +57,28 @@ class _LabState extends State<Lab> {
                   SizedBox(
                     height: 10.0,
                   ),
-                  SizedBox(
+                  BlurryContainer(
+                    blur: 55,
+                    borderRadius: BorderRadius.circular(7.0),
                     height: 80,
                     width: 350,
-                    child: Card(
-                      shape: RoundedRectangleBorder(
-                        side: BorderSide(
-                          color: Color(0xFF693B93).withOpacity(0.7),
-                        ),
-                        borderRadius: BorderRadius.circular(7.0),
-                      ),
-                      color: Color(0xFF693B93).withOpacity(0.7),
-                      margin: EdgeInsets.symmetric(
-                          vertical: 2.0, horizontal: 7.0),
-                      child: Padding(
-                        padding:
-                        EdgeInsets.only(top: 2.0, bottom: 2.0),
-                        child: ListTile(
-                            title: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment:
-                              CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  'A web app for visualizing personalized Spotify data. View your',
-                                  style: TextStyle(
-                                    color: Color(0xFFCCD6F6),
-                                    letterSpacing: 0.3,
-                                    fontWeight: FontWeight.w400,
-                                    fontSize: 9.0,
-                                    fontFamily: 'Poppins',
-                                    fontStyle: FontStyle.normal,
-                                  ),
-                                ),
-                                Text(
-                                  'top artists, top tracks, recently played tracks, and detailed',
-                                  style: TextStyle(
-                                    color: Color(0xFFCCD6F6),
-                                    letterSpacing: 0.3,
-                                    fontWeight: FontWeight.w400,
-                                    fontSize: 9.0,
-                                    fontFamily: 'Poppins',
-                                    fontStyle: FontStyle.normal,
-                                  ),
-                                ),
-                                Text(
-                                  'information about each track. Create and save new playlists',
-                                  style: TextStyle(
-                                    color: Color(0xFFCCD6F6),
-                                    letterSpacing: 0.3,
-                                    fontWeight: FontWeight.w400,
-                                    fontSize: 9.0,
-                                    fontFamily: 'Poppins',
-                                    fontStyle: FontStyle.normal,
-                                  ),
-                                ),
-                                Text(
-                                  'recommended tracks based on your existing playlists.',
-                                  style: TextStyle(
-                                    color: Color(0xFFCCD6F6),
-                                    letterSpacing: 0.3,
-                                    fontWeight: FontWeight.w400,
-                                    fontSize: 9.0,
-                                    fontFamily: 'Poppins',
-                                    fontStyle: FontStyle.normal,
-                                  ),
-                                ),
-                              ],
-                            )),
+                    color: Colors.transparent,
+                    padding: EdgeInsets.all(15),
+                    child: Text(
+                      '''A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.''',
+                      style: TextStyle(
+                        color: Color(0xFFCCD6F6),
+                        letterSpacing: 0.3,
+                        fontWeight: FontWeight.w400,
+                        fontSize: 9.0,
+                        fontFamily: 'Poppins',
+                        fontStyle: FontStyle.normal,
                       ),
                     ),
                   ),
-
                 ],
               ),
             ),
-
           ],
         ),
       ),

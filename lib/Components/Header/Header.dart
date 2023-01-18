@@ -16,103 +16,71 @@ class _HeaderState extends State<Header> {
         child: Stack(
           children: [
             Positioned(
-              left: MediaQuery.of(context).size.width / 3.5,
-              top: 50,
-              child: Row(
-                children: const [
-                  Text(
-                    'Hello! I Am',
-                    style: TextStyle(
-                      color: Color(0xFFFFFFFF),
-                      letterSpacing: 0.5,
-                      fontWeight: FontWeight.w400,
-                      fontSize: 19.0,
-                      fontFamily: 'Preahvihear',
-                      fontStyle: FontStyle.normal,
-                    ),
-                  ),
-                  Text(
-                    '  Sanajna',
-                    style: TextStyle(
-                      color: Color(0xFF7127BA),
-                      letterSpacing: 0.5,
-                      fontWeight: FontWeight.w400,
-                      fontSize: 19.0,
-                      fontFamily: 'Preahvihear',
-                      fontStyle: FontStyle.normal,
-                    ),
-                  )
-                ],
-              ),
-            ),
-            Positioned(
-              left: MediaQuery.of(context).size.width / 9.4,
-              top: 50,
+              left: MediaQuery.of(context).size.width / 2.4,
+              top: 85,
               child: Image(
                 image: AssetImage('images/Vector.png'),
               ),
             ),
-            Positioned(
-              left: MediaQuery.of(context).size.width / 9.4,
-              top: 50,
-              child: Image(
-                image: AssetImage('images/Gradient.png'),
-              ),
-            ),
-            Positioned(
-              left: MediaQuery.of(context).size.width / 6.3,
-              top: 150,
-              child: Image(
-                image: AssetImage('images/grad1.png'),
-              ),
-            ),
-            Positioned(
-              left: MediaQuery.of(context).size.width / 5.4,
-              top: 140,
-              child: Image(
-                image: AssetImage('images/image 1.png'),
-              ),
-            ),
-            Positioned(
-              left: MediaQuery.of(context).size.width > 1660
-                  ? MediaQuery.of(context).size.width / 3.3
-                  : MediaQuery.of(context).size.width > 1200
-                      ? MediaQuery.of(context).size.width / 2.8
-                      : MediaQuery.of(context).size.width > 990
-                          ? MediaQuery.of(context).size.width / 2.5
-                          : MediaQuery.of(context).size.width / 2,
-              top: 140,
-              child: Container(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+            Column(
+              children: [
+                SizedBox(
+                  height: 40,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: const [
+                    Text(
+                      'Hello! I Am',
+                      style: TextStyle(
+                        color: Color(0xFFFFFFFF),
+                        letterSpacing: 0.5,
+                        fontWeight: FontWeight.w400,
+                        fontSize: 19.0,
+                        fontFamily: 'Preahvihear',
+                        fontStyle: FontStyle.normal,
+                      ),
+                    ),
+                    Text(
+                      '  Sanajna',
+                      style: TextStyle(
+                        color: Color(0xFF7127BA),
+                        letterSpacing: 0.5,
+                        fontWeight: FontWeight.w400,
+                        fontSize: 19.0,
+                        fontFamily: 'Preahvihear',
+                        fontStyle: FontStyle.normal,
+                      ),
+                    )
+                  ],
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
-                      'A Designer who',
-                      style: TextStyle(
-                        color: Color(0xFFFFFFFF),
-                        letterSpacing: 0.5,
-                        fontWeight: FontWeight.w400,
-                        fontSize: 17.0,
-                        fontFamily: 'Preahvihear',
-                        decoration: TextDecoration.underline,
-                        fontStyle: FontStyle.normal,
-                      ),
+                    Image(
+                      height: 300,
+                      image: AssetImage('images/main.png'),
                     ),
-                    Text(
-                      'Judges a book',
-                      style: TextStyle(
-                        color: Color(0xFFFFFFFF),
-                        letterSpacing: 0.5,
-                        fontWeight: FontWeight.w400,
-                        fontSize: 28.0,
-                        fontFamily: 'Preahvihear',
-                        fontStyle: FontStyle.normal,
-                      ),
-                    ),
-                    Row(
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'by its',
+                          'A Designer who',
+                          style: TextStyle(
+                            color: Color(0xFFFFFFFF),
+                            letterSpacing: 0.5,
+                            fontWeight: FontWeight.w400,
+                            fontSize: 17.0,
+                            fontFamily: 'Preahvihear',
+                            decoration: TextDecoration.underline,
+                            fontStyle: FontStyle.normal,
+                          ),
+                        ),
+                        Text(
+                          'Judges a book',
                           style: TextStyle(
                             color: Color(0xFFFFFFFF),
                             letterSpacing: 0.5,
@@ -122,49 +90,59 @@ class _HeaderState extends State<Header> {
                             fontStyle: FontStyle.normal,
                           ),
                         ),
-                        Text(
-                          ' cover',
-                          style: TextStyle(
-                            color: Color(0xFF7127BA),
-                            letterSpacing: 0.5,
-                            fontWeight: FontWeight.w400,
-                            fontSize: 30.0,
-                            fontFamily: 'Preahvihear',
-                            fontStyle: FontStyle.normal,
-                          ),
+                        Row(
+                          children: [
+                            Text(
+                              'by its',
+                              style: TextStyle(
+                                color: Color(0xFFFFFFFF),
+                                letterSpacing: 0.5,
+                                fontWeight: FontWeight.w400,
+                                fontSize: 28.0,
+                                fontFamily: 'Preahvihear',
+                                fontStyle: FontStyle.normal,
+                              ),
+                            ),
+                            Text(
+                              ' cover',
+                              style: TextStyle(
+                                color: Color(0xFF7127BA),
+                                letterSpacing: 0.5,
+                                fontWeight: FontWeight.w400,
+                                fontSize: 30.0,
+                                fontFamily: 'Preahvihear',
+                                fontStyle: FontStyle.normal,
+                              ),
+                            ),
+                            Text(
+                              '...',
+                              style: TextStyle(
+                                color: Color(0xFFFFFFFF),
+                                letterSpacing: 0.5,
+                                fontWeight: FontWeight.w400,
+                                fontSize: 29.0,
+                                fontFamily: 'Preahvihear',
+                                fontStyle: FontStyle.normal,
+                              ),
+                            ),
+                          ],
                         ),
                         Text(
-                          '...',
+                          'Because if the cover does not impress you what else can?',
                           style: TextStyle(
                             color: Color(0xFFFFFFFF),
                             letterSpacing: 0.5,
                             fontWeight: FontWeight.w400,
-                            fontSize: 29.0,
+                            fontSize: 8.0,
                             fontFamily: 'Preahvihear',
                             fontStyle: FontStyle.normal,
                           ),
                         ),
                       ],
                     ),
-                    Text(
-                      'Because if the cover does not impress you what else can?',
-                      style: TextStyle(
-                        color: Color(0xFFFFFFFF),
-                        letterSpacing: 0.5,
-                        fontWeight: FontWeight.w400,
-                        fontSize: 8.0,
-                        fontFamily: 'Preahvihear',
-                        fontStyle: FontStyle.normal,
-                      ),
-                    ),
                   ],
                 ),
-              ),
-            ),
-            Positioned(
-                left: MediaQuery.of(context).size.width / 5.4,
-                top: 475,
-                child: Column(
+                Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
@@ -229,7 +207,9 @@ class _HeaderState extends State<Header> {
                       ),
                     ),
                   ],
-                )),
+                ),
+              ],
+            )
           ],
         ),
       ),
