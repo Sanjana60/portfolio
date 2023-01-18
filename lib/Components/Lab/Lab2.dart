@@ -2,7 +2,8 @@ import 'package:blurrycontainer/blurrycontainer.dart';
 import 'package:flutter/material.dart';
 
 class Lab2 extends StatefulWidget {
-  const Lab2({Key? key}) : super(key: key);
+  final String image;
+  const Lab2({Key? key,required this.image}) : super(key: key);
 
   @override
   State<Lab2> createState() => _Lab2State();
@@ -15,15 +16,14 @@ class _Lab2State extends State<Lab2> {
       padding: EdgeInsets.symmetric(vertical: 0.0, horizontal: 20),
       child: Container(
         width: 800,
-        color: Colors.red,
         child: Stack(
           children: [
             Align(
               alignment: Alignment.centerLeft,
               child: Image(
-                image: AssetImage('images/newww.png'),
+                image: AssetImage('images/${widget.image}'),
                 fit: BoxFit.cover,
-                height: 500,
+                height: 310,
               ),
             ),
             Align(

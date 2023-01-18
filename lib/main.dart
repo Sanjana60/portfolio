@@ -28,13 +28,12 @@ class MyApp extends StatelessWidget {
                 height: 100,
               ),
               Container(height: 750, child: Tech()),
+
+              Container(height: 500, child: Lab(image: "proj1.png",)),
+              Container(height: 500, child: Lab2(image: "proj2.png",)),
+              Container(height: 500, child: Lab(image: "proj3.png",)),
               SizedBox(
-                height: 100,
-              ),
-              Container(height: 500, child: Lab()),
-              Container(height: 500, child: Lab2()),
-              SizedBox(
-                height: 100,
+                height: 50,
               ),
               Container(height: 250, child: Footer())
             ],
