@@ -13,77 +13,67 @@ class _TechState extends State<Tech> {
     return Padding(
       padding: EdgeInsets.symmetric(vertical: 0.0, horizontal: 20),
       child: Container(
-        child: Stack(
-          children: [
-            Positioned(
-              left: MediaQuery.of(context).size.width / 5.4,
-              child: Container(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
-                        Text(
-                          "I'm currently looking to join a",
-                          style: TextStyle(
-                            color: Color(0xFFFFFFFF),
-                            letterSpacing: 0.5,
-                            fontWeight: FontWeight.w400,
-                            fontSize: 13.0,
-                            fontFamily: 'Preahvihear',
-                            fontStyle: FontStyle.normal,
-                          ),
-                        ),
-                        Text(
-                          ' cross-functional',
-                          style: TextStyle(
-                            color: Color(0xFF7127BA),
-                            letterSpacing: 0.5,
-                            fontWeight: FontWeight.w400,
-                            fontSize: 13.0,
-                            fontFamily: 'Preahvihear',
-                            fontStyle: FontStyle.normal,
-                          ),
-                        ),
-                        Text(
-                          ' team',
-                          style: TextStyle(
-                            color: Color(0xFF7127BA),
-                            letterSpacing: 0.5,
-                            fontWeight: FontWeight.w400,
-                            fontSize: 13.0,
-                            fontFamily: 'Preahvihear',
-                            fontStyle: FontStyle.normal,
-                          ),
-                        )
-                      ],
+        child: Container(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const [
+                  Text(
+                    "I'm currently looking to join a",
+                    style: TextStyle(
+                      color: Color(0xFFFFFFFF),
+                      letterSpacing: 0.5,
+                      fontWeight: FontWeight.w400,
+                      fontSize: 13.0,
+                      fontFamily: 'Preahvihear',
+                      fontStyle: FontStyle.normal,
                     ),
-                    Text(
-                      "that values improving people's lives through accessible design",
-                      style: TextStyle(
-                        color: Color(0xFFFFFFFF),
-                        letterSpacing: 0.5,
-                        fontWeight: FontWeight.w400,
-                        fontSize: 8.0,
-                        fontFamily: 'Preahvihear',
-                        fontStyle: FontStyle.normal,
-                      ),
+                  ),
+                  Text(
+                    ' cross-functional',
+                    style: TextStyle(
+                      color: Color(0xFF7127BA),
+                      letterSpacing: 0.5,
+                      fontWeight: FontWeight.w400,
+                      fontSize: 13.0,
+                      fontFamily: 'Preahvihear',
+                      fontStyle: FontStyle.normal,
                     ),
-                    SizedBox(
-                      height: 30.0,
+                  ),
+                  Text(
+                    ' team',
+                    style: TextStyle(
+                      color: Color(0xFF7127BA),
+                      letterSpacing: 0.5,
+                      fontWeight: FontWeight.w400,
+                      fontSize: 13.0,
+                      fontFamily: 'Preahvihear',
+                      fontStyle: FontStyle.normal,
                     ),
-                    Image(
-                      image: AssetImage('images/Skills.png'),
-                    ),
-                  ],
+                  )
+                ],
+              ),
+              Text(
+                "that values improving people's lives through accessible design",
+                style: TextStyle(
+                  color: Color(0xFFFFFFFF),
+                  letterSpacing: 0.5,
+                  fontWeight: FontWeight.w400,
+                  fontSize: 8.0,
+                  fontFamily: 'Preahvihear',
+                  fontStyle: FontStyle.normal,
                 ),
               ),
-            ),
-            // SizedBox(
-            //   height: 10.0,
-            // ),
-          ],
+              SizedBox(
+                height: 30.0,
+              ),
+              Image(
+                image: AssetImage('images/Skills.png'),
+              ),
+            ],
+          ),
         ),
       ),
     );

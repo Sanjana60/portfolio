@@ -75,7 +75,7 @@ class _HeaderState extends State<Header> {
                             fontWeight: FontWeight.w400,
                             fontSize: 17.0,
                             fontFamily: 'Preahvihear',
-                            decoration: TextDecoration.underline,
+                            // decoration: TextDecoration.underline,
                             fontStyle: FontStyle.normal,
                           ),
                         ),

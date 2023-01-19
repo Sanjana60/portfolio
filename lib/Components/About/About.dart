@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:html' as html;
 
 class About extends StatefulWidget {
   const About({Key? key}) : super(key: key);
@@ -43,7 +44,10 @@ class _AboutState extends State<About> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     InkWell(
-                      onTap: () {},
+                      onTap: () {
+                        html.window
+                            .open('https://www.fluttercampus.com', "_blank");
+                      },
                       onHover: (x) {
                         setState(() {
                           hover1 = x;
