@@ -28,6 +28,13 @@ class _MyAppState extends State<MyApp> {
     );
   }
 
+  // @override
+  // void initState() {
+  //   _scrollController = ScrollController();
+  //   _scrollController.addListener(_scrollListener);
+  //   super.initState();
+  // }
+
   @override
   Widget build(BuildContext context) {
     bool hoverhome = false;
